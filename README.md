@@ -36,7 +36,7 @@ The other half of my time is shipping things people actually open — including 
 | Project | What it actually is | What it proves |
 |---|---|---|
 | **[Secure-Vault-AI](https://github.com/DARKDRAGON02/Secure-Vault-AI)** | End-to-end encrypted relay for AI prompts. The client encrypts with AES-256-GCM; the Node relay only ever handles ciphertext. | Threat modelling, browser crypto, API design |
-| **[container-runtime-monitor](https://github.com/DARKDRAGON02/container-runtime-monitor)** | A container runtime in C: PID/UTS/mount isolation via `clone()`, supervisor CLI, plus a kernel module enforcing soft and hard RSS limits with automatic OOM termination. | Systems programming, kernel modules, real resource control |
+| **[container-runtime-monitor](https://github.com/DARKDRAGON02/container-runtime-monitor)** | A container runtime in C: PID/UTS/mount isolation via `clone()`, a supervisor CLI, and a kernel module that samples RSS and kills the process past its hard limit. | Systems programming, kernel modules, real resource control |
 | **[swara-maternity-clinic](https://github.com/DARKDRAGON02/swara-maternity-clinic)** | Appointment booking built for a real clinic — Express API, Vite + React + Tailwind UI, zero-login email-driven admin so staff don't manage passwords. **Live →** [swara-maternity-clinic.vercel.app](https://swara-maternity-clinic.vercel.app) | Working with a real client, scoping, shipping |
 | **[E-Commerce](https://github.com/DARKDRAGON02/E-Commerce)** | MERN storefront with Firebase Auth, a Cloudinary media pipeline, cart and admin dashboard, responsive Tailwind UI. | Full-stack breadth, auth, third-party integration |
 
