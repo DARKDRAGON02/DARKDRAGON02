@@ -64,6 +64,6 @@ The other half of my time is shipping things people actually open — including 
 
 **Open to 2027 new-grad and internship roles** in systems, security, or product engineering.
 
-I also work in shared codebases — my PRs are on `se-mini-project-t16/railway-reservation-system` (JWT auth, ownership-checked e-ticket generation).
+I also work in shared codebases — 4 PRs into `se-mini-project-t16/railway-reservation-system`, covering registration, JWT login, account lockout after failed attempts, and ownership-checked e-ticket generation.
 
 </div>
