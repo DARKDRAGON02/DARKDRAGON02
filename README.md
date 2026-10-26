@@ -1,4 +1,4 @@
-<img src="assets/hero.png" width="100%" alt="Kishan S — CSE '27, PES University, Bengaluru" />
+<img src="assets/banner.png" width="100%" alt="Kishan S — CSE '27, PES University, Bengaluru" />
 
 <br />
 
