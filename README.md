@@ -21,7 +21,6 @@
 [![Location](https://img.shields.io/badge/📍_Bengaluru,_India-0d1117?style=flat-square&labelColor=21262d&color=30363d)](https://github.com/DARKDRAGON02)
 [![University](https://img.shields.io/badge/🎓_PES_University-0d1117?style=flat-square&labelColor=21262d&color=30363d)](https://github.com/DARKDRAGON02)
 [![Batch](https://img.shields.io/badge/B.Tech_CSE_·_2023–2027-0d1117?style=flat-square&labelColor=21262d&color=30363d)](https://github.com/DARKDRAGON02)
-[![Repos](https://img.shields.io/badge/📦_10_public_repos-0d1117?style=flat-square&labelColor=1f6feb&color=388bfd)](https://github.com/DARKDRAGON02?tab=repositories)
 
 <br/>
 
@@ -50,7 +49,7 @@ class KishanS:
     def approach(self):
         return "Read the source, then rebuild the mechanism by hand"
 
-    def flagship(self):
+    def projects(self):
         return ["container-runtime-monitor", "Secure-Vault-AI",
                 "swara-maternity-clinic", "E-Commerce"]
 ```
@@ -207,14 +206,6 @@ class KishanS:
 ## `> top`
 
 <div align="center">
-
-| Metric | Value |
-|:---:|:---:|
-| **Public repos** | 10 |
-| **Flagship projects** | 5 |
-| **Languages used** | 6 |
-
-<br/>
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=DARKDRAGON02&theme=github-dark&hide_border=true&date_format=M%20j%5B%2C%20Y%5D&background=0D1117&stroke=30363D&ring=388bfd&fire=388bfd&currStreakLabel=58A6FF&sideLabels=8B949E&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B949E)](https://git.io/streak-stats)
 
