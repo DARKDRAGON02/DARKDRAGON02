@@ -15,7 +15,7 @@
 
 Most student portfolios are the same MERN CRUD app four times. Mine isn't, so here's the honest version of what I actually do:
 
-I like the layer underneath the one everybody else works at. My container runtime is written in C against raw `clone()` and Linux namespaces, with a kernel module that accounts RSS and kills the process when it blows its limit. My AI relay encrypts in the browser with AES-256-GCM and hands the server nothing but ciphertext, so the "trust us" box doesn't have to exist. Both of those turned out to be the most fun I've had writing software.
+I like the layer underneath the one everybody else works at. My container runtime is written in C against raw `clone()` and Linux namespaces, with a kernel module that accounts RSS and kills the process when it blows its limit. My AI relay encrypts prompts in the browser with AES-256-GCM — and building it taught me exactly where "encrypted" stops meaning "private", because the key still has to reach the server. Both of those turned out to be the most fun I've had writing software.
 
 The other half of my time is shipping things people actually open — including a booking system built for a working maternity clinic, live in production.
 
@@ -25,7 +25,7 @@ The other half of my time is shipping things people actually open — including 
 
 **Systems & low level.** Linux namespaces, `clone()`, kernel modules, memory accounting, process supervision. Written in C and Linux system calls — not YAML around somebody else's runtime.
 
-**Applied security.** Authenticated encryption with AES-256-GCM through the Web Crypto API, zero-knowledge relay design, JWT auth flows. I care about what the server *cannot* see, not just what it validates.
+**Applied security.** Authenticated encryption with AES-256-GCM — browser-side through the Web Crypto API, server-side through Node's `crypto` — plus key and IV handling, auth tags, and JWT auth flows. I've learned the difference between traffic being encrypted and a server being unable to read it; they are not the same claim.
 
 **Full-stack delivery.** React / Next.js / Vite front ends, Node and Express APIs, cloud deploys. I finish projects instead of collecting half-built repos.
 
@@ -35,7 +35,7 @@ The other half of my time is shipping things people actually open — including 
 
 | Project | What it actually is | What it proves |
 |---|---|---|
-| **[Secure-Vault-AI](https://github.com/DARKDRAGON02/Secure-Vault-AI)** | End-to-end encrypted relay for AI prompts. The client encrypts with AES-256-GCM; the Node relay only ever handles ciphertext. | Threat modelling, browser crypto, API design |
+| **[Secure-Vault-AI](https://github.com/DARKDRAGON02/Secure-Vault-AI)** | Relay for AI prompts with AES-256-GCM on both legs — prompt encrypted in the browser, reply re-encrypted before it leaves the server. Not true E2EE, and the README says exactly why. | Browser crypto, key/IV handling, honest threat modelling |
 | **[container-runtime-monitor](https://github.com/DARKDRAGON02/container-runtime-monitor)** | A container runtime in C: PID/UTS/mount isolation via `clone()`, a supervisor CLI, and a kernel module that samples RSS and kills the process past its hard limit. | Systems programming, kernel modules, real resource control |
 | **[swara-maternity-clinic](https://github.com/DARKDRAGON02/swara-maternity-clinic)** | Appointment booking built for a real clinic — Express API, Vite + React + Tailwind UI, zero-login email-driven admin so staff don't manage passwords. **Live →** [swara-maternity-clinic.vercel.app](https://swara-maternity-clinic.vercel.app) | Working with a real client, scoping, shipping |
 | **[E-Commerce](https://github.com/DARKDRAGON02/E-Commerce)** | MERN storefront with Firebase Auth, a Cloudinary media pipeline, cart and admin dashboard, responsive Tailwind UI. | Full-stack breadth, auth, third-party integration |
